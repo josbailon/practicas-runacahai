@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p.title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p.subtitle {
+    font-size: 16px;
+    text-align: center;
+}
+
+p.section-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.info-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    border-right: 1px solid #000;
+}
+
+.info div {
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+
+/* Estilo para celdas editables */
+.editable {
+    user-select: none; /* Desactiva la selección de texto */
+    cursor: text; /* Muestra el cursor de texto */
+    outline: none; /* Elimina el borde por defecto */
+}
+
+.editable:focus {
+    outline: 2px solid #00f; /* Resalta la celda editable cuando se hace clic (opcional) */
+}
+
+/* Sección de tablas */
+.student-info table,
+.academic-info table,
+.student-identification table,
+.family-info table,
+.observations table,
+.signatures table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.student-info td,
+.academic-info td,
+.student-identification td,
+.family-info td,
+.observations td,
+.signatures td,
+.student-info th,
+.academic-info th,
+.student-identification th,
+.family-info th,
+.observations th,
+.signatures th {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Encabezados gris oscuro */
+.header-row .header-cell {
+    background-color: #b3b3b3;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Sección Datos Académicos */
+.academic-table th, .academic-table td {
+    text-align: center;
+}
+
+/* Sección Identificación del Estudiante */
+.identification-table th {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Sección Datos Familiares */
+.family-table th {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Sección Observaciones */
+.observations-table td {
+    height: 50px;
+}
+
+/* Firmas */
+.signatures table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.signatures td {
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+    vertical-align: bottom;
+}
+
+.signatures strong {
+    display: block;
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* Alineación del escudo */
+.escudo {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.escudo-container {
+    flex-shrink: 0;
+    padding-left: 10px;
+}
